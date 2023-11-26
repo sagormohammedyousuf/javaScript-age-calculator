@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Kumbh+Sans:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100svh;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 800px) {
+    padding: 1rem;
+    height: 50svh;
+  }
+}
+
+.calc {
+  margin-top: 5%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.calc h1 {
+  font-size: 4rem;
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+h1 span {
+  color: yellow;
+  font-size: 4rem;
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+
+.input-box {
+  margin: 40px 0;
+  padding: 35px;
+  border-radius: 10px;
+  /* background: rgba(255,255,255,0,3); */
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  @media (max-width: 800px) {
+    padding: 1.5rem;
+  }
+}
+
+.input-box input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 14px 20px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  @media (max-width: 800px) {
+    flex: 1.5;
+    font-size: 14px;
+  }
+}
+
+.input-box button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  @media (max-width: 800px) {
+    padding: 10px 20px;
+  }
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+#result {
+  text-align: center;
+
+  font-size: 1.5rem;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
